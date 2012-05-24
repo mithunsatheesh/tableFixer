@@ -1,0 +1,499 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link type="text/css" rel="stylesheet" href="demo/style.css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" src="src/tableFixer.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){ 
+
+
+$('#roll,#roll1,#roll2,#roll3').doFixColumn({fix:"blacklist"});
+
+
+});	
+	
+</script>
+    
+    
+</head>
+
+<body>
+
+<h1 class="toplogo">Table Fixer <br />
+ Jquery Plugin</h1>
+
+<p>
+Table Fixer is a jquery plugin for fixing columns,rows or even individual cells of a table. Just add "fixer" class to the cells you want to have static functionality and call the plugin.
+</p>
+
+<h1 class="headline">USAGE</h1>
+
+<p>Just call plugin with the table id and then give class fixer to the cells you want to be fixed.</p>
+
+<br />
+
+<p>javascript</p>
+<pre>
+
+$(document).ready(function(){
+
+	$('#roll').doFixColumn();
+    
+});
+
+</pre>
+
+
+<p>html</p>
+<pre>
+
+&lt;table id=&quot;roll&quot;&gt;
+&lt;thead&gt;&lt;tr&gt;
+&lt;th class=&quot;fixer&quot;&gt;sample&lt;/th&gt;&lt;th&gt;sample&lt;/th&gt;
+&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;td class=&quot;fixer&quot;&gt;sample&lt;/td&gt;&lt;td&gt;sample&lt;/td&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+</pre>
+
+
+<h1 class="headline">DEMOS</h1>
+
+<div id="demo_container">
+
+<p>A demo with first column freezed.</p>
+
+<table class="box" id="roll">
+
+<thead>
+<tr>
+<th class="blacklist">aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa<input type="button" onclick="isScrolledIntoView();" value="doCheck" /></th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="blacklist">aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+</tr>
+</tbody>
+
+</table>
+
+<br />
+<p>A demo with cells (1,1) and (2,2) freezed.</p>
+
+<table class="box" id="roll3">
+
+<thead>
+<tr>
+<th class="blacklist">aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa<input type="button" onclick="isScrolledIntoView();" value="doCheck" /></th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>aaaaa</td><td class="blacklist">bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+</tr>
+</tbody>
+
+</table>
+
+<br />
+<p>A demo with first two columns freezed.</p>
+<table class="box" id="roll1">
+
+<thead>
+<tr>
+<th class="blacklist">aaaaa</th><th class="blacklist">bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa<input type="button" onclick="isScrolledIntoView();" value="doCheck" /></th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="blacklist">aaaaa</td><td class="blacklist">bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+</tr>
+</tbody>
+
+</table>
+
+<br />
+
+<p>A demo with cell (2,2) freezed.</p>
+<table class="box" id="roll2">
+
+<thead>
+<tr>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa<input type="button" onclick="isScrolledIntoView();" value="doCheck" /></th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+<th>aaaaa</th><th>bbbb</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>aaaaa</td><td class="blacklist">bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+<td>aaaaa</td><td>bbbb</td>
+</tr>
+</tbody>
+
+</table>
+</div>
+
+<h1>OPTIONS</h1>
+
+<p> This Plugin provides following options. </p>
+<p> You can use a custom class to fix the cells and mention the class name in variable fix. </p>
+<p> The background color and font color for the fixed cells may be defined using variables background and color. </p>
+<p> Also the width and height for the holding div container may be set using tableWidth and tableHeight variables. </p>
+
+
+<p>html</p>
+<pre>
+<code>
+&lt;table id=&quot;roll&quot;&gt;
+    &lt;thead&gt;&lt;tr&gt;
+    &lt;th class=&quot;custom&quot;&gt;sample&lt;/th&gt;&lt;th&gt;sample&lt;/th&gt;
+    &lt;/tr&gt;&lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;td class=&quot;custom&quot;&gt;sample&lt;/td&gt;&lt;td&gt;sample&lt;/td&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</code>
+</pre>
+
+
+<p>JS</p>
+<pre>
+
+$(document).ready(function(){
+	$('#roll').doFixColumn({
+    background : "#09D",
+    color : "#FFF",
+    fix:"custom",
+    tableWidth:'100%',
+    tableHeight:'100%'
+    });
+});
+
+</pre>
+
+<h1>Change Log</h1>
+<p>Version 1.0 (initial)</p>
+
+</body>
+</html>

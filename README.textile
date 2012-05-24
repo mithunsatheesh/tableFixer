@@ -1,0 +1,89 @@
+h1. Table Fixer jQuery Plugin
+
+*Version:* 1.0
+
+*License:* "Dual GPL + MIT"
+
+*Author:* "Mithun Satheesh"
+
+
+h2. About
+
+Table Fixer is a jquery plugin for fixing columns,rows or even individual cells of a table. Just add "fixer" class to the cells you want to have static functionality and call the plugin. 
+
+h2. Browser Support
+
+Tested on IE8+, Safari, Chrome, Firefox 3+
+
+h2. Use
+
+Just call plugin with the table id and then give class fixer to the cells you want to be fixed.
+
+h3. javascript
+
+<pre>
+$(document).ready(function(){
+
+	$('#roll').doFixColumn();
+    
+});
+</pre>
+
+h3. html
+
+
+<pre>
+<table id="roll">
+<thead><tr>
+<th class="fixer">sample</th><th>sample</th>
+</tr></thead>
+<tbody>
+<td class="fixer">sample</td><td>sample</td>
+</tbody>
+</table>
+</pre>
+
+h2. Options
+
+This Plugin provides following options.
+
+You can use a custom class to fix the cells and mention the class name in variable fix.
+
+The background color and font color for the fixed cells may be defined using variables background and color.
+
+Also the width and height for the holding div container may be set using tableWidth and tableHeight variables. 
+
+h3. html
+
+<pre>
+<table id="roll">
+    <thead><tr>
+    <th class="custom">sample</th><th>sample</th>
+    </tr></thead>
+    <tbody>
+    <td class="custom">sample</td><td>sample</td>
+    </tbody>
+</table>
+</pre>
+
+h3. JS
+
+<pre>
+$(document).ready(function(){
+	$('#roll').doFixColumn({
+    background : "#09D",
+    color : "#FFF",
+    fix:"custom",
+    tableWidth:'100%',
+    tableHeight:'100%'
+    });
+});
+</pre>
+
+
+
+h2. Changelog
+
+*Version 1.0*
+
+* Initial Release
